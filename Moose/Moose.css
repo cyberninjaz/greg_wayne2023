@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:wght@500&display=swap');
+
+header {
+    width: 100%;
+    position: top;
+    background-color: midnightblue;
+    margin:0;
+}
+
+header h1 {
+    color:gray;
+    font-size:80;
+    margin:0;
+    font-family:Cambria;
+    vertical-align:middle;
+    text-align:center;
+}
+
+body {
+    background-color: black;
+}
+
+.b1 {
+    width:20%;
+    text-align:center;
+    border:5px gray ridge;
+    color:gray;
+    background-color: black;
+    font-size:40;
+    font-family:verdana;
+    padding:0.5em;
+    position:absolute;
+    bottom:1em;
+    right:40%;
+}
+
+.b2 {
+    width:10%;
+    text-align:center;
+    border:3px gray ridge;
+    color:gray;
+    background-color:black;
+    font-size:20;
+    font-family:verdana;
+    padding:0.5em;
+    position:absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+main {
+    width: 100%;
+    vertical-align:bottom;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.appear {
+    display: flex;
+}
+
+#Screen {
+    background-color: black;
+}
+
+.Moose {
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+.attributions {
+    width:100%;
+    font-family:verdana;
+    font-size:20;
+    margin:7%;
+    color:ivory;
+}
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Birds.css">
+    <script src="Birds.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(18, 53, 20)">
+    <header>
+        <div class="HDiv" onclick="appear(0); gameOver2();">
+            Discover Birds
+        </div>
+        <div class="HDiv" onclick="appear(1); gameOver2();">
+            Play the Game
+        </div>
+        <div class="HDiv" onclick="appear(2); gameOver2();">
+            Videos
+        </div>
+        <div class="HDiv" onclick="appear(3); gameOver2();">
+            Gallery
+        </div>
+        <div class="HDiv" onclick="appear(4); gameOver2();">
+            Attributions
+        </div>
+    </header>
+    <main class="appear">
+        <div class="MDiv">
+            <p class="P1">
+                <span class="PTitle" onclick="speak('Discover Birds')">Discover Birds</span>
+                <br>
+                <br> Birds are undoubtedly some of the most interesting animals today. For one, they can both fly and glide, but they also have unique social practices
+                that are not shared by many other animals such as creating nests. There are many different kinds of birds from birds of prey, which hunt for food with 
+                their good vision and sharp talons, to birds birds that cannot even fly such as chickens and turkeys, which are served as delicasies around the world. 
+                <br>
+                <br> Birds can be easily identified with their wings or wing-like structures, feathers, and beaks. These can come in many different shapes that depend on the species of bird.
+                For example, eagles have long feathers on large wings and more hooked beaks while hummingbirds have pointed beaks to extract nectar from flowers and short feathers on short wings. 
+                <br>
+                <br> Some birds are also amphibians such as geese, ducks, and swans. These birds are picturesque and can fly to varying degrees, though some of them have aggressive behaviors (especially swans).
+                Oftentimes, these birds have webbed feet for propulsion in water and movement on land, in addition to folding wings that can be used to float in the water and fly in the air. 
+                <br>
+                <br> Birds descended from the dinosaurs, which is why they share the traits of laying eggs and having clawed feet, though this trait is more expressed in some birds than others. 
+                Hollow bones also allow for lighter bodies which allow birds to travel at incredibly high speeds, such as the Periguine Falcon which is the fastest animal on the panet.
+                <br>
+                <br> This website hopes to better inform you of birds and their presense in human society. Feel free to play the game about geese and swans, find videos on birds, look at the gallery, or look at the attributions for further research. Please enjoy!
+
+            </p>
+        </div>
+        <img class="BackI" src = "Raptor.jpg"></img>
+    </main>
+    <main>
+        <div id="gameBoard">
+            <audio id="LMusic" loop>
+                <source src = "LMusic.mp3">
+            </audio>
+            <audio id="Exp">
+                <source src = "Exp.mp3">
+            </audio>
+            <audio id="GameO">
+                <source src = "GameO.mp3">
+            </audio>
+            <audio id="Scream">
+                <source src = "Scream.mp3">
+            </audio>
+            <img src="GX.png" id="cross">
+            <div id="go">
+                <img src="GMonster.jpg" class="goImg"></img>
+                <div class="goDisplay">
+                    Game
+                    <br>
+                    <br>Over
+                </div>
+            </div>
+        </div>
+        <div class="GDiv">
+            <div id="BDiv" onclick="startGame();">Start</div>
+            <div class="SDiv">Score: <span id="scoreN"></span> </div>
+            <div id="inst">
+                You're taking a nice evening walk at your local park, and you are truly appreciative of nature. Suddenly, killer geese and swans attack you from the woods. Defend yourelf and hold off these killer birds for as long as possible. 
+            </div>
+            <div id="moves">
+                Controls: 
+                <br>
+                <br> - Arrow keys to move cursor
+                <br>
+                <br> - "A" to shoot
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="MDiv">
+            <p class="P1">
+                <span class="PTitle" onclick="speak('Videos')"> Videos</span>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=wZjJvTdKY2o')"> Chickens - Sweet, Spicy Korean Crispy Chicken </div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=u6ppFEDRGbk')"> Turkeys - Thanksgiving </div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=usx6_88R8uk')"> Raptors - Identification </div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=1_8hz4bHfYY')"> Falcons - The Fastest Creatures on Earth</div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=hecXupPpE9o')"> Eagles - Hunting Salmon</div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=wnaylfxGTnY')"> Ducks - Quacking</div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=pdtpI33EXHQ')"> Geese - Lifestyle</div>
+                <br>
+                <div class="PDiv" onclick="window.open('https://www.youtube.com/watch?v=0sH-Kix4a2k')"> Swans - Flight</div>
+                <br>
+            </p>
+        </div>
+        <img class="BackI" src="Chicken.jpg"></img>
+    </main>
+    <main>
+        <img class="SI" src="Raptor2.jpg" onclick="speak('Raptor')"></img>
+        <img class="SI" src="Eagle2.jpg" onclick="speak('Eagle')"></img>
+        <img class="SI" src="Chicken2.jpg" onclick="speak('Chicken')"></img>
+        <img class="SI" src="Turkey2.jpg" onclick="speak('Turkey')"></img>
+        <img class="SI" src="Goose2.jpg" onclick="speak('Goose')"></img>
+        <img class="SI" src="Swan2.jpg" onclick="speak('Swan')"></img>
+        <img class="SI" src="Hawk2.jpg" onclick="speak('Hawk')"></img>
+        <img class="SI" src="Duck2.jpg" onclick="speak('Duck')"></img>
+        <img class="SI" src="Falcon2.jpg" onclick="speak('Falcon')"></img>
+        <img class="SI" src="Emu2.jpg" onclick="speak('Emu')"></img>
+        <img class="SI" src="Peacock2.jpg" onclick="speak('Peacock')"></img>
+        <img class="SI" src="Hummingbird2.jpg" onclick="speak('Hummingbird')"></img>
+        <img class="FI" src="E&S2.jpeg" onclick="speak('Eagle with Fish')"></img>
+    </main>
+    <main>
+        <div class="MDiv">
+            <p class="P2">
+                <span class="PTitle" onclick="speak('Attributions')">Attributions</span>
+                <br>
+                <br> https://community.rspb.org.uk/ourwork/b/scotland/posts/gamebird-hunting-why-we-re-supporting-calls-173-for-it-to-be-regulated
+                <br> https://www.thisoldhouse.com/yards/21018068/chicken-coop-must-haves-for-a-healthy-happy-roost
+                <br> https://abcbirds.org/bird/mallard/ 
+                <br>
+                <br> https://www.youtube.com/watch?v=wZjJvTdKY2o
+                <br> https://www.youtube.com/watch?v=u6ppFEDRGbk
+                <br> https://www.youtube.com/watch?v=usx6_88R8uk
+                <br> https://www.youtube.com/watch?v=1_8hz4bHfYY
+                <br> https://www.youtube.com/watch?v=hecXupPpE9o
+                <br> https://www.youtube.com/watch?v=wnaylfxGTnY
+                <br> https://www.youtube.com/watch?v=pdtpI33EXHQ
+                <br> https://www.youtube.com/watch?v=0sH-Kix4a2k
+                <br>
+                <br> https://en.wikipedia.org/wiki/Bird
+                <br>
+                <br> https://pixabay.com/photos/of-prey-eagle-eagle-savannah-eagle-2749590/
+                <br> https://pixabay.com/photos/eagle-raptor-birds-of-prey-bird-2776081/
+                <br> https://pixabay.com/photos/chicken-hen-animal-poultry-farm-3727097/
+                <br> https://pixabay.com/photos/wildlife-turkey-bird-plumage-4749823/
+                <br> https://pixabay.com/photos/hawk-bird-of-prey-bird-hunter-1853120/
+                <br> https://pixabay.com/photos/emu-smile-bird-portrait-animal-3479510/
+                <br> https://pixabay.com/photos/greylag-goose-water-reflection-8138408/
+                <br> https://pixabay.com/photos/swan-bird-flying-swan-water-7167802/
+                <br> https://pixabay.com/photos/duck-bird-ornithology-species-7917949/
+                <br> https://pixabay.com/photos/raptor-peregrine-falcon-falcon-bird-2745549/
+                <br> https://pixabay.com/photos/peafowl-peacock-bird-feathers-2363750/
+                <br> https://pixabay.com/photos/rufous-bird-hummingbird-flight-6476117/
+                <br> https://triadrivertours.com/river-research/2019/1/25/bald-eagles-salmon-and-winter-floods-the-annual-migration
+                <br> 
+                <br> https://pixabay.com/photos/sunset-mood-landscape-color-view-5416789/
+                <br> https://pixabay.com/photos/goose-big-bird-wings-water-bird-2246759/
+                <br> https://pixabay.com/photos/swan-water-bird-wing-big-white-5059320/
+                <br> https://pixabay.com/photos/nile-goose-duck-bird-waterbird-3538831/
+                <br> https://www.stickpng.com/img/miscellaneous/shapes/square
+                <br> https://freesound.org/people/InspectorJ/sounds/412224/
+                <br> https://freesound.org/people/InspectorJ/sounds/448226/
+                <br> https://freesound.org/people/Baltiyar13/sounds/564046/
+                <br> https://freesound.org/people/Mordecai666/sounds/579818/
+                <br> https://pluspng.com/png-131116.html
+                <br>
+            </p>
+        </div>
+        <img class="BackI" src="Mallard.jpg"></img>
+
+    </main>
+</body>
+</html>

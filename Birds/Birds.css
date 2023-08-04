@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:wght@500&display=swap');
+
+
+
+
+.appear {
+    display:flex;
+}
+
+
+
+header {
+    width:100%;
+    position:top;
+    background-color:gray;
+    margin:0;
+    display:flex;
+}
+
+.HDiv {
+    width:30%;
+    height:1.5em;
+    font-size:20px;
+    background-color:gray;
+    font-family:'spectral sc';
+    color:black;
+    margin-top:0.3em;
+    margin-bottom:0.1em;
+    margin-left:3.5em;
+    margin-right:1em;
+    text-decoration:none;
+}
+
+.HDiv:hover {
+    text-decoration:underline;
+}
+
+
+
+main {
+    width:100%;
+    vertical-align:bottom;
+    display:none;
+    flex-wrap:wrap;
+    margin:none;
+}
+
+.BackI {
+    width:50%;
+    height:100%;
+    margin:0%;
+    float:right;
+}
+
+.MDiv {
+    width:50%;
+    height:116vh;
+    margin:0%;
+    background-color:whitesmoke;
+}
+
+.PTitle {
+    font-size:22px;
+    font-weight:bold;
+}
+
+.P1 {
+    color:black;
+    font-size:18px;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    font-family:verdana;
+}
+
+.P2 {
+    color:black;
+    font-size:12px;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    font-family:verdana;
+}
+
+.PDiv {
+    color:black;
+    font-size:18px;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    font-family:verdana;
+}
+
+
+
+.SI {
+    width:33.3333333%;
+    height:55vh;
+}
+
+.FI {
+    width:100%;
+}
+
+
+
+#gameBoard {
+    position:relative;
+    height:80vh;
+    width:100vw;
+    overflow:hidden;
+    background-image:url(GField.jpg);
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+
+#cross {
+    position:absolute;
+    top:50%;
+    left:47%;
+    height:15%;
+    width:6%;
+    margin:0px;
+    padding:0px;
+    transition:all 0.1s linear 0s;
+}
+
+#go {
+    position:absolute;
+    height:80vh;
+    width:100vw;
+    margin:0px;
+    background-color:rgb(30, 9, 62);
+    display:none;
+}
+
+.goDisplay {
+    position:absolute;
+    text-align:center;
+    margin:0px;
+    font-family:verdana;
+    font-size:140px;
+    font-weight:bold;
+    color:orange;
+    left:25vw;
+    width:50vw;
+}
+
+.goImg {
+    position:absolute;
+    text-align:center;
+    margin:0px;
+    left:25vw;
+    width:50vw;
+}
+
+.GDiv {
+    float:bottom;
+    height:13vh;
+    width:100vw;
+    background-color:black;
+    display:flex;
+}
+
+#BDiv {
+    width:30%;
+    height:1.5em;
+    font-size:40px;
+    font-family:'verdana';
+    color:white;
+    margin-top:0.3em;
+    margin-bottom:0.1em;
+    margin-left:3.5em;
+    margin-right:1em;
+    text-decoration:none;
+}
+
+#BDiv:hover {
+    text-decoration:underline;
+}
+
+.SDiv {
+    width:30%;
+    height:1.5em;
+    font-size:40px;
+    font-family:'verdana';
+    color:white;
+    margin-top:0.3em;
+    margin-bottom:0.1em;
+    margin-left:3.5em;
+    margin-right:1em;
+    text-decoration:none;
+}
+
+#inst {
+    width:30%;
+    height:1.5em;
+    font-size:13.5px;
+    font-family:'verdana';
+    color:white;
+    margin-top:0.3em;
+    margin-bottom:0.1em;
+    margin-left:3.5em;
+    margin-right:1em;
+    text-decoration:none;
+}
+
+#moves {
+    width:30%;
+    height:1.5em;
+    font-size:15px;
+    font-family:'verdana';
+    color:white;
+    margin-top:0.3em;
+    margin-bottom:0.1em;
+    margin-left:3.5em;
+    margin-right:1em;
+    text-decoration:none;
+    display:none;
+}
+
+.swan {
+    position:absolute;
+    top:50%;
+    left:100%;
+    height:15%;
+    width:8%;
+    margin:0px;
+    padding:0px;
+    transition:0.1s linear 0s;
+    filter: grayscale(0%);
+}
+
+
